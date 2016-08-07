@@ -1,0 +1,10 @@
+<ion-view view-title="Contacts">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="contact in ContactsController.contacts" ui-sref="app.detail({contactId: contact.id})">
+        <h2>{{ contact.name }}</h2>
+        <p>{{ contact.email }}</p>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
